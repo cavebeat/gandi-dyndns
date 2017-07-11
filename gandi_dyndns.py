@@ -317,7 +317,8 @@ def update_ip():
       }, {
         'name': new_dynamic_record['name'],
         'type': new_dynamic_record['type'],
-        'value': external_ip
+        'value': external_ip,
+	'ttl': 600
       })
 
       # ensure that we successfully set the new dynamic record
